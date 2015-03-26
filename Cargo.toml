@@ -1,0 +1,8 @@
+[package]
+
+name = "Rust-Coverage-Sample"
+version = "0.0.1"
+authors = [ "Krishna" ]
+
+[[bin]]
+name = "rust_coverage_sample"
