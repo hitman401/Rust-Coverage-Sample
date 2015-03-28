@@ -17,8 +17,3 @@ fn add_test() {
 fn test() {
 	add_test();
 }
-
-pub fn lib_suite() {
-		add_test();
-}
-
