@@ -4,5 +4,5 @@ name = "Rust-Coverage-Sample"
 version = "0.0.1"
 authors = [ "Krishna" ]
 
-[[bin]]
+[lib]
 name = "rust_coverage_sample"
