@@ -8,6 +8,7 @@ pub fn sub(a: i32, b: i32) -> isize {
 
 
 #[test]
-fn add_test() {
+pub fn add_test() {
 	assert_eq!(10isize, add(4, 6))
 }
+
