@@ -2,7 +2,7 @@ fn add(a: i32, b: i32) -> isize {
 	(a + b) as isize
 }
 
-fn add(a: i32, b: i32) -> isize {
+fn sub(a: i32, b: i32) -> isize {
 	(a + b) as isize
 }
 
