@@ -4,10 +4,9 @@ script:
 - cargo build
 
 after_success: |
-  if ($TRAVIS_BRANCH == 'master') {
-    sudo apt-get install libcurl4-openssl-dev libelf-dev libdw-dev &&
+  if [[$TRAVIS_PULL_REQUEST == "false"]]; then sudo apt-get install libcurl4-openssl-dev libelf-dev libdw-dev &&
     wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz &&
     tar xzf master.tar.gz && mkdir kcov-master/build && cd kcov-master/build && cmake .. && make &&
     sudo make install && cd ../.. &&
     kcov --coveralls-id=$TRAVIS_JOB_ID --exclude-pattern=/.cargo target/kcov target/debug/rust_coverage_sample
-  }
+  fi
