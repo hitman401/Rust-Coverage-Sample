@@ -4,5 +4,8 @@ script:
 - cargo build
 
 after_success: |
-  if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then rustc --version; fi
+  if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then 
+    rustc --version;
+    cargo --version;
+  fi
   
