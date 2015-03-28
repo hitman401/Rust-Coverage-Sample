@@ -8,7 +8,7 @@ fn sub(a: i32, b: i32) -> isize {
 
 fn main() {
 	println!("{:?}", add(1i32, 3i32));
-	println!("{:?}", sub(10i32, 3i32));
+//	println!("{:?}", sub(10i32, 3i32));
 }
 
 #[test]
