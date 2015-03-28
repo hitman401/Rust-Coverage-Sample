@@ -4,6 +4,7 @@ script:
 - cargo build
 
 after_success: |
+  ls target/debug
   if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     sudo apt-get install libcurl4-openssl-dev libelf-dev libdw-dev && 
     wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz &&
