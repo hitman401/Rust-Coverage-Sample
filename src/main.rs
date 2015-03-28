@@ -2,8 +2,13 @@ fn add(a: i32, b: i32) -> isize {
 	(a + b) as isize
 }
 
+fn add(a: i32, b: i32) -> isize {
+	(a + b) as isize
+}
+
 fn main() {
 	println!("{:?}", add(1i32, 3i32));
+	println!("{:?}", sub(10i32, 3i32));
 }
 
 #[test]
