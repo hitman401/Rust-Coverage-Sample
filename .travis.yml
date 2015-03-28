@@ -4,5 +4,5 @@ script:
 - cargo build
 
 after_success: |
-  if [ ${TRAVIS_PULL_REQUEST} == 'false']; then sudo apt-get install libcurl4-openssl-dev libelf-dev libdw-dev fi;
+  if [ ${TRAVIS_PULL_REQUEST} == 'false']; then sudo apt-get install libcurl4-openssl-dev libelf-dev libdw-dev; fi
   
