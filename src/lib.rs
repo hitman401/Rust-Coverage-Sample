@@ -1,3 +1,5 @@
+pub mod stud;
+
 pub fn add(a: i32, b: i32) -> isize {
 	(a + b) as isize
 }
